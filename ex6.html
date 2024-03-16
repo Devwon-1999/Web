@@ -6,18 +6,21 @@
     </head>
     <body>
         <h1> Hello world</h1>
-        <input id="change_button" type="button" value="night" onclick="
-        if (document.querySelector('#change_button').value === 'night'){
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-        document.querySelector('#change_button').value = 'day';
+        <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (this.value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day';
         }
         else{
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-        document.querySelector('#change_button').value = 'night';
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night';
         }
         ">
         <h2> Hello JavaScript</h2>
+
+
     </body>
 </html>
