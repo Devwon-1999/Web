@@ -23,8 +23,37 @@
         </ul>
 
         <h2>Parameter & Argument</h2>
+        <script>
+            function oneplusone(){
+                document.write(1 + 1 + "<br>");
+            }
+            oneplusone(); // 2
+            function sum(a, b){
+                document.write(a + b + "<br>");
+            }
+            sum(3, 5); // 8
+            function sumColorRed(a, b){
+                document.write('<div style="color:red">' + a + b + '</div>');
+            }
+            function sumColorBlue(a, b){
+                document.write(`<div style="color:purple"> ${a + b} </div>`);
+            }
+            sumColorRed(1, 2); // 3
+            sumColorBlue(1, 2); // 3
+            function minus(a, b){
+                document.write(a - b + "<br>");
+            }
+            minus(5, 3); // 2
+        </script>
 
         <h2>Return</h2>
-
+        <script>
+            function sum2(left, right){
+                return left + right
+            }
+            document.write(sum2(2, 3) + "<br>");
+            document.write('<div style="color:red">' + sum2(2, 3) + '</div>');
+            document.write('<div style="font-size:5rem">' + sum2(2, 3) + '</div>');
+        </script>
     </body>
 </html>
