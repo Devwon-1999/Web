@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1> 객체 </h1>
+        <h2> 객체 생성 & 사용 </h2>
+
+        <script>
+            var company = { //객체 생성
+                "Developer" : "Kim",
+                "Programmer" : "Park",
+                "Designer" : "Lee"
+            };
+
+            //객체 사용
+            document.write("Developer : " + company.Developer + "<br>");
+            document.write("Programmer : " + company.Programmer + "<br>");
+            document.write("Designer : " + company.Designer + "<br>");
+
+            company.Planner = "Choi"; // 선언 이후 대입
+            document.write("Planner : " + company.Planner + "<br>");
+            company["Data Scientist"] = "Moon" // []를 사용하여 띄워쓰기인 데이터도 입력 가능
+            document.write("Data Scientist : " + company["Data Scientist"] + "<br>");
+            document.write("<br>");
+
+        </script>
+
+        <h2> 반복문 & 객체</h2>
+        <script>
+        //반복문과 객체
+        for(var key in company){ //여기서 key는 Developer, Programmer, Designer, ... 등 이다
+            document.write(key + " "); // 키 값 출력
+        }
+        document.write("<br>");
+
+        for(var key in company){ 
+            document.write(company[key] + " "); // 키에 해당하는 데이터 출력
+        }
+
+        </script>
+
+        <h2> 프로퍼티 & 함수 </h2>
+        <script>
+            company.showAll = function(){
+                for(var key in company){ 
+                    document.write(key + " : " + this[key] + "<br>");
+                }
+            }
+            company.showAll();
+            // company.showAll = function(){}
+            // var showAll = function(){} 
+            // function showAll(){}
+            // 위 세가지 함수는 선언방식은 다르지만 다 함수를 선언하는 방법이다.
+        </script>
+    </body>
+</html>
