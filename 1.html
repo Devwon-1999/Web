@@ -1,56 +1,65 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!-- Google tag (gtag.js) --> <!-- 구글 분석기 분석 시스템-->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSCTQGDTTB"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<ul> <!-- ul은 li태그의 부모이며 여러가지 li태그를 사용할 때 뷴류를 위해 사용한다.-->
+    <li>HTML </li>
+    <li>CSS </li>
+    <li>JavaScript</li> <!-- li 태그는 리스트를 나타내주는 태그이다.-->
+</ul>
 
-        gtag('config', 'G-BSCTQGDTTB');
-        </script>
-        <title> Main Pages</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <script src="colors.js"></script>
-    </head>
+<ol> <!-- ol은 앞에 순차적으로 숫자를 붙여준다.-->
+    <li>C </li>
+    <li>C++ </li>
+    <li>C#</li>
+</ol>
 
-    <body>
-        <h1><a href="index.html"> Main page of Web academy</a> </h1>
-        <input type="button" value="night" onclick="nightDayHandler(this)">  
-        <div id="grid">
-            <ul>
-                <li><a href="1.html"><font color="red"> HTML </font></a></li>
-                <li><a href="2.html"> CSS </a></li>
-                <li><a href="3.html"> JavaScript </a></li>
-            </ul>
-        
-        <div id="article">
-        <h2> This is HTML page </h2>
-        <h3> I Study by <a href="https://www.youtube.com/watch?v=tZooW6PritE&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb">This</a></h3>
-        
-        <h4>HTML</h4>
-        <p>
-            웹사이트의 모습을 기술하기 위한 마크업 언어. <br>
-            프로그래밍 언어가 아니라 마크업 정보를 표현하는 마크업 언어로<br>
-            문서의 내용 이외의 문서의 구조나 서식 같은 것을 포함한다.<br> 
-            보면 알겠지만 애초에 이름 HTML의 ML이 마크업 언어라는 뜻이다. <br>
-            웹사이트에서 흔히 볼 수 있는 htm이나 html 확장자가 바로 <br>
-            이 언어로 작성된 문서다. <br>
-            최초 제안자는 CERN의 물리학자 티머시 J. 버너스리이다. <br>
-            URL, HTTP, WWW의 전신인 Enquire 등도 그가 세트로 개발하고 제안했다. <br>
-            TCP/IP 통신규약을 만든 빈턴 G. 서프(Vinton Gray Cerf)와 함께 인터넷의 아버지로 불린다. <br>
-            나무위키에서는 아래와 같이 내용을 집어넣어 HTML을 적용시킬 수 있지만 도움말은 권장하지 않는 문법이고, <br>
-            지원 종료 가능성이 있는 문법이므로 나무위키에서는 HTML 태그를 사용하지 않는 것을 추천한다.<br>
-            출처: 나무위키<br>
-        </p>
-            </div>
-        </div>
-        <p> <!-- 동영상 첨부-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE?si=_ed3B0EqFeWfSkrB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </p>
-    </body>
+<!-- ul, ol은 li의 부모 태그이다.--> <!-- Unordered List--> <!-- Ordered List -->
+<!-- ul은 앞에 ●가 붙어진다.--> 
+<!-- ol은 앞에 숫자가 붙여지며 리스트당 1개씩 순차적으로 증가되는 숫자를 부여받는다.-->
 
+<table>
+    <tr>
+        <td>head</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>body</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>20</td>
+    </tr>
+</table>
+<!-- table는 표를 나타내는 태그이다. tr은 행, td는 행의 내용을 나타내는 태그이다.-->
 
-</html>
+<br>
+Hello world.
+<strong>html</strong>   <!-- 진하게 -->
+<u> html</u>            <!-- 밑줄 -->
+
+<strong><u>html</u></strong>
+
+<h1>html</h1>   <!-- 줄바꿈, 진하게 -->
+<h2>html</h2>   <!-- 줄바꿈, 진하게 -->
+<h3>html</h3>   <!-- 줄바꿈, 진하게 -->
+<h4>html</h4>   <!-- 줄바꿈, 진하게 -->
+<h5>html</h5>   <!-- 줄바꿈, 진하게 -->
+<h6>html</h6>   <!-- 줄바꿈, 진하게 -->
+
+Hello world.
+Hello world.
+Hello world.
+Hello world.
+Hello world.<br><br>
+
+Hello world.<br>
+Hello world.<br>
+Hello world.<br>
+Hello world.<br>
+Hello world.<br>    <!-- 줄바꿈 닫지 않는다.-->
+
+<p>Hello world.Hello world.Hello world.Hello world.Hello world.</p>
+<p>Hello world.Hello world.Hello world.Hello world.Hello world.</p>
+<p style="margin-top: 40px;">Hello world.Hello world.Hello world.Hello world.Hello world.</p>
+<!-- p태그는 단락을 나눠주는 태그이다.-->
+
+<img src="coding.JPG"> <!-- 이미지를 src를 통해 불러와 띄워줄 수 있는 페이지이다.-->
+
